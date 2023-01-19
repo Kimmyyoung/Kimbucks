@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+
+/* GLOBAL */
+
+body {
+  padding-top: 120px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap {
+  height: 100vh;
+  position: relative;
+}
+
+  
+  /* GNB */
+
+.sub_gnb_wrap {
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f6f5ef;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 2px solid #000;
+}
+
+.sub_gnb_wrap_inner {
+  position: relative;
+  margin: 0 auto;
+  height: 120px;
+  width: 1100px;
+}
+
+.sub_gnb_wrap_inner .logo {
+  position: absolute;
+  top: 37px;
+  left: 0;
+  height: 75px;
+  width: 75px;
+  z-index: 12;
+  font-family: 'Style Script', cursive;
+  font-size: 46px;
+}
+
+.logo a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.sub_gnb_wrap_inner .util_nav > ul > li a {
+  font-size: 13px;
+}
+
+/* Util */
+
+.util_nav {
+  position: absolute;
+  top: 15px;
+  right: 110px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.util_nav li {
+  margin-left: 30px;
+  height: 20px;
+  float: left;
+  text-align: center;
+}
+
+.util_nav li a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #555555;
+}
+
+.btn_search {
+  position: absolute;
+  top: 9px;
+  right: 54px;
+  height: 32px;
+  width: 32px;
+}
+
+/* Util end */
+
+
+/* Sub GNB NAV */
+
+nav.sub_gnb_nav {
+  position: fixed;
+  top: 54px;
+  left: 0;
+  height: 66px;
+  width: 100%;
+  z-index: 10000;
+}
+
+div.sub_gnb_nav_inner {
+  margin: 0 auto;
+  padding-top: 10px;
+  height: 66px;
+  width: 1100px;
+  z-index: 14;
+}
+
+div.sub_gnb_nav_inner > ul {
+  float: right;
+}
+
+div.sub_gnb_nav_inner > ul > li {
+  float: left;
+}
+
+div.sub_gnb_nav_inner > ul > li.gnb_nav01 {
+  width: 89px;
+}
+
+div.sub_gnb_nav_inner > ul > li.gnb_nav02 {
+  width: 73px;
+}
+
+div.sub_gnb_nav_inner > ul > li.gnb_nav03 {
+  width: 79px;
+}
+
+div.sub_gnb_nav_inner > ul > li.gnb_nav04 {
+  width: 153px;
+}
+
+div.sub_gnb_nav_inner > ul > li.gnb_nav05 {
+  width: 225px;
+}
+
+div.sub_gnb_nav_inner > ul > li.gnb_nav06 {
+  width: 131px;
+}
+
+div.sub_gnb_nav_inner > ul > li a {
+  color: #555555;
+  font-size: 13px;
+}
+
+/* GNB end */
+
+
+/* SUB TITLE */
+
+#container {
+  width: 100%;
+  min-height: 880px;
+}
+
+div.sub_tit_wrap {
+  height: 98px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+div.sub_tit_inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+  height: 91px;
+  width: 1100px;
+}
+
+div.sub_tit_inner h2 {
+  position: relative;
+  padding-top: 30px;
+}
+
+/* SUB TITLE end */
+
+
+/* BREADCRUMB */
+
+.smap strong {
+  font-weight: 500;
+}
+
+div.sub_tit_wrap .sub_tit_inner ul.smap {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+div.sub_tit_wrap .sub_tit_inner ul.smap li {
+  font-size: 13px;
+}
+
+div.sub_tit_wrap .sub_tit_inner ul.smap li:first-child {
+  position: relative;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  background-image: url(https://image.istarbucks.co.kr/common/img/common/icon_home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.sub_tit_wrap .sub_tit_inner ul.smap li:nth-child(2n) {
+  width: 7px;
+  height: 12px;
+  position: relative;
+  top: 1px;
+  background-image: url(https://image.istarbucks.co.kr/common/img/common/icon_arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* BREADCRUMB end */
+
+
+/* CONTENTS */
+
+.content {
+  margin: 0 auto;
+  padding-bottom: 120px;
+  width: 1100px;
+  background: transparent;
+}
+
+div.product_view_wrap1 {
+  position: relative;
+  padding-top: 30px;
+}
+
+
+/* PICTURE */
+
+.product_view_pic {
+  width: 450px;
+  float: left;
+  overflow: hidden;
+}
+
+.product_big_pic {
+  width: 100%;
+}
+
+.product_big_pic .zoomFrame > img {
+  height: auto;
+  width: 100%;
+}
+
+/* PICTURE end */
+
+
+
+/* ZOOM animation */
+
+.zoomFrame {
+  position: relative;
+  height: 470px;
+}
+
+.zoomLens {
+  display: none;
+  background-position: 0px 0px;
+  float: right;
+  overflow: hidden;
+  z-index: 9;
+  transform: translateZ(0px);
+  opacity: 0.4;
+  zoom: 1;
+  width: 305px;
+  height: 234px;
+  background-color: white;
+  cursor: default;
+  border: 1px solid rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.zoomWindowContainer {
+  width: 610px;
+}
+
+.zoomWindow {
+  display: none;
+  overflow: hidden;
+  background-position: 0 0;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 610px;
+  height: 468px;
+  float: left;
+  background-size: 900px 940px;
+  z-index: 100;
+  /* border: 4px solid rgb(136, 136, 136); */
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: url(https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002672]_20200921171223958.jpg);
+  top: 31px;
+  left: 488px;
+}
+
+/* ZOOM animation end */
+
+.myAssignZone {
+  position: relative;
+}
+
+/* LIKE */
+
+div.like__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* MICRO INTERACTION (HEART) */
+
+#like {
+  opacity: 0;
+  z-index: 5;
+}
+
+.btn-love {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-love:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background: url(https://abs.twimg.com/a/1446862637/img/t1/web_heart_animation.png) 0 0 no-repeat;
+  background-size: 2900%;
+  height: 100px;
+  width: 100px;
+}
+
+#like:checked + .btn-love:after {
+  animation: heart-burst steps(28) 0.8s 1 both;
+}
+
+
+/* PRODUCT DESCRIPTION */
+
+div.product_view_detail {
+  position: relative;
+  width: 610px;
+  float: right;
+}
+
+div.product_view_detail h4 {
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #333;
+  font-weight: bold;
+  font-size: 24px;
+  color: #222;
+}
+
+div.product_view_detail h4 span {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #666;
+}
+
+div.product_view_detail p.t1 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  min-height: 40px;
+}
+
+.hid {
+  position: absolute;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.product_info_head {
+  position: relative;
+  height: 59px;
+  line-height: 59px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.product_info_head p.tit {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.product_view_detail .product_select_wrap2 {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.product_view_detail .product_select_wrap2 > div {
+  float: left;
+}
+
+.selectTxt2 {
+  margin-right: 6px;
+  margin-top: -5px;
+}
+
+
+/* NUTRITION FACT */
+
+div.product_info_content {
+  margin: 20px 0;
+  width: 100%;
+}
+
+div.product_info_content ul {
+  width: 50%;
+  float: left;
+}
+
+div.product_info_content ul:last-child {
+  width: 50%;
+  float: right;
+  border-left: 1px dotted #D6D6D6;
+}
+
+div.product_info_content ul li {
+  padding: 0 10px;
+  line-height: 2.5;
+}
+
+div.product_info_content ul li dl {
+  width: 100%;
+  font-size: 14px;
+  color: #444;
+}
+
+div.product_info_content dl dt {
+  float: left;
+  width: 85%;
+}
+
+div.product_info_content dl dd {
+  float: right;
+  width: 15%;
+  text-align: right;
+}
+
+div.product_alergy {
+  position: relative;
+}
+
+
+div.product_alergy p.alergy_warn {
+  padding-left: 10px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #efefef;
+}
+
+
+
+
+/* REVIEW */
+
+section.review_wrap {
+  margin-top: 30px;
+  float: right;
+  width: 610px;
+}
+
+section.review_wrap > dl > dt.review_tit {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #D6D6D6;
+}
+
+section.review_wrap > dl > dt.review_tit h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section.review_wrap > dl > dd.review_container {
+  position: relative;
+  margin: 20px 0 10px 0;
+  height: 80px;
+}
+
+section.review_wrap > dl > dd.review_container ul {
+  position: absolute;
+  overflow-y: scroll;
+  height: 100%;
+  bottom: 0;
+  width: 100%
+}
+
+section.review_wrap > dl > dd.review_container ul .review_thread {
+  position: relative;
+  padding-left: 10px;
+  height: 27px;
+  width: 100%;
+  line-height: 27px;
+  font-size: 14px;
+  border-bottom: 1px solid #f4f4f4;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+section.review_wrap > dl > dd.review_container .review_thread .id {
+  margin-right: 5px;
+  font-weight: bold;
+  color: #333333;
+}
+
+section.review_wrap > dl > dd.review_container .review_thread .comment {
+  color: #555555;
+}
+
+#review_field {
+  height: 34px;
+  width: 100%;
+  border: none;
+  background-color: #efefef;
+  padding-left: 10px;
+}
+
+#review_field:focus {
+  outline: none;
+}
+
+
+
+/* REVIEW FIELD INTERACTION */
+
+.review_container .review_thread:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.review_container .review_thread:hover {
+  background-color: #e9e9e9;
+}
+
+.review_container .review_thread:hover #closeBtn {
+  display: block;
+}
+
+.review_container .review_thread #closeBtn {
+  display: none;
+  position: absolute;
+  padding-left: 1px;
+  height: 20px;
+  width: 20px;
+  top: 3px;
+  right: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: crimson;
+  opacity: 0.9;
+}
+
+
+
+/* Review Validation */
+
+#validTag {
+  position: absolute;
+  bottom: 35px;
+  text-align: center;
+  line-height: 24px;
+  color: #ffffff;
+  width: 180px;
+  height: 26px;
+  background-color: #333;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0;
+  /* transition: opacity 2s; */
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+
+/* INTERACTION */
+
+.visible {
+  display: block;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes heart-burst {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+@keyframes notValid {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0; }
+}
