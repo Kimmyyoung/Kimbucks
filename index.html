@@ -15,11 +15,13 @@
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/footer.css">
 
-  <link rel="shortcut icon" href="./resources/img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./resources/img/favicon.ico" type="image/x-icon">
+
+  <!-- Swiper UI -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <script defer src="https://kit.fontawesome.com/cb28e7c19e.js" crossorigin="anonymous"></script>
-  <script defer src="./js/list.js"></script>
+  <script defer src="./js/index.js"></script>
 
   <title>Starbucks</title>
 </head>
@@ -139,7 +141,6 @@
         
   <section class="line_notice">
     <div class="line_notice_left">
-      <h2>공지사항</h2>
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -155,8 +156,10 @@
                                 <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 안내</a>
                             </div>
                         </div>
+                       
                     </div>
     </div>
+
     <div class="line_notice_right">
       <div class="line_notice_bgr">
         <h2 class="prom_ttl">스타벅스 프로모션</h2>
@@ -166,28 +169,34 @@
       </div>
     </div>
     
-    <!-- <div class="line_notice_bg">
-      <div class="line_notice_bgl">
-        <div class="line_notice_inner">
-          <dl class="line_notice_inner_l">
-            <dt class="notice_ttl">
-              <img src="https://image.istarbucks.co.kr/common/img/common/notice_ttl.png" alt="공지사항">
-            </dt>
-            <dd>
-              <ul class="news_result" style="direction: ltr; font-size: 13px; color: rgb(255, 255, 255);"><li style=""><a href="#">제26기 정기주주총회 권리행사 기준일 공고</a></li><li style="display: none;"><a href="/whats_new/noticeView.do?seq=4789">시스템 개선 및 서비스 점검 안내</a></li><li style="display: none;"><a href="/whats_new/noticeView.do?seq=4780">시스템 개선 및 서비스 점검 안내</a></li><li style="display: none;"><a href="/whats_new/noticeView.do?seq=4809">시스템 개선 및 서비스 점검 안내</a></li><li style="display: none;"><a href="/whats_new/noticeView.do?seq=4798">스타벅스 e카드 교환권 등록 가능 금액 안내</a></li></ul>
-            </dd>
-          </dl>
-        </div>
+ <!--PROMOTION-->
+ <div class="promotion">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/promotion_slide1.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!" />
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
       </div>
+      <div class="swiper-slide">
+        <img src="./images/promotion_slide2.jpg" alt="기간 내 스타벅스 카드 e-Gift를 3만원 이상 선물 시, 아메리카노 e-쿠폰을 드립니다." />
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/promotion_slide3.jpg" alt="뉴이어 푸드와 제조 음료를 세트로 구매 시, 뉴이어 음료 BOGO(1+1) 쿠폰을 드립니다." />
+        <a href="javascript:void(0)" class="btn">자세히 보기</a>
+      </div>
+     
+    </div>
+  </div>
 
-      
-      <div class="line_notice_bgr">
-        <h2 class="prom_ttl">스타벅스 프로모션</h2>
-        <div class="toggle-promotion">
-            <div class="btn_prom material-icons"><img src="https://image.istarbucks.co.kr/common/img/common/btn_prom_down.png" alt="스타벅스 프로모션 펼쳐보기" role="button"></div>
-        </div>
-      </div> -->
+  <div class="swiper-pagination"></div>
 
+  <div class="swiper-prev">
+    <span class="material-icons">arrow_back</span>
+  </div>
+  <div class="swiper-next">
+    <span class="material-icons">arrow_forward</span>
+  </div>
 
     </div>
   </section>
@@ -276,5 +285,4 @@
 <!-- FOOTER end -->
 
 </div>
-
 </html>
