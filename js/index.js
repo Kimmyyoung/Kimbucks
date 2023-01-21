@@ -22,8 +22,8 @@ const swiper = new Swiper('.swiper', {
     }
   })
 
-  new Swiper(".promotion .swiper", {
-    // direction: 'horizontal', 수평 방향은 기본값이라 생략가능
+  const promotionswiper = new Swiper(".promotion .swiper", {
+    direction: 'horizontal', // 수평 방향은 기본값이라 생략가능
     slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 10, // 슬라이드 사이 여백
     centeredSlides: true, // 1번 슬라이드가 가운데 보이기
@@ -37,6 +37,6 @@ const swiper = new Swiper('.swiper', {
     },
     navigation: { // 이전버튼 다음버튼
       prevEl: '.promotion .swiper-prev', // div 요소 선택자
-      nextEl: '.promotion.swiper-next', // div 요소 선택자
+      nextEl: '.promotion .swiper-next', // div 요소 선택자
     }
   });
