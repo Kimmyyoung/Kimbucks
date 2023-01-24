@@ -1,10 +1,4 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-    autoplay: true,  
-    // If we need pagination
-  });
+
 
   const promotionEl = document.querySelector('.promotion');
   const promotionToggleBtn = document.querySelector('.toggle-promotion');
@@ -13,16 +7,16 @@ const swiper = new Swiper('.swiper', {
   promotionToggleBtn.addEventListener('click', () => {
     isHidePromotion =! isHidePromotion;
     console.log(isHidePromotion);
-
     if(isHidePromotion === true) {
-        //isHidePromotion == false 
         promotionEl.classList.add('hide');
     }else {
         promotionEl.classList.remove('hide');
     }
   })
 
-  const promotionswiper = new Swiper(".promotion .swiper", {
+
+  // swiper 설정 
+  new Swiper(".promotion .swiper-container", {
     direction: 'horizontal', // 수평 방향은 기본값이라 생략가능
     slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
     spaceBetween: 10, // 슬라이드 사이 여백
@@ -40,3 +34,10 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.promotion .swiper-next', // div 요소 선택자
     }
   });
+
+
+new Swiper('.inner__left .swiper-slide', {
+  direction: 'vertical',
+  loop: true,
+  autoplay: true,  
+});
