@@ -36,8 +36,8 @@
   });
 
 
-new Swiper('.inner__left .swiper-slide', {
+new Swiper('.notice-line .swiper-container', {
   direction: 'vertical',
   loop: true,
-  autoplay: true,  
+  autoplay: {delay: 1000},  
 });
