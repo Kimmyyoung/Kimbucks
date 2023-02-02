@@ -336,3 +336,129 @@
 		top: 350px;
 		left: 150px;
 	  }
+
+	  
+/* SEASON PRODUCT */
+.season-product {
+	background-image: url("../images/season_product_bg.jpg")
+  }
+  .season-product .inner {
+	height: 400px;
+  }
+  .season-product .floating3 {
+	position: absolute;
+	top: -200px;
+	right: 0;
+  }
+  .season-product .text-group {
+	position: absolute;
+	top: 110px;
+	right: 100px;
+  }
+  .season-product .text-group .title {
+	margin-bottom: 10px;
+  }
+  .season-product .text-group .description {
+	margin-bottom: 15px;
+  }
+  .season-product .text-group .more {
+  
+  }
+  
+  /* RESERVE COFFEE */
+  .reserve-coffee {
+	background-image: url("../images/reserve_bg.jpg")
+  }
+  .reserve-coffee .inner {
+	height: 400px;
+  }
+  .reserve-coffee .reserve-logo {
+	position: absolute;
+	top: 110px;
+	left: 0;
+  }
+  .reserve-coffee .text-group {
+	position: absolute;
+	top: 124px;
+	left: 208px;
+  }
+  .reserve-coffee .product {
+	position: absolute;
+	top: 0;
+	right: 0;
+  }
+  
+  
+  /* PICK YOUR FAVORITE */
+  .pick-your-favorite {
+	background-image: url("../images/favorite_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;   /* 스크롤 될 때 같이 스크롤 되지 않고 뷰포트 부분에 고정되어서 움직이지 않음 */
+	background-size: cover;         /* 배경 이미지를 요소에 더 넓은 너비에 맞춰서 출력 */
+  }
+  .pick-your-favorite .inner {
+	padding: 110px 0;
+  }
+  .pick-your-favorite .text-group {
+	margin-left: 100px;
+	display: flex;
+	width: 362px;
+	flex-wrap: wrap;
+	justify-content: flex-end;  /* 수평의 끝으로 정렬(오른쪽 정렬) */ 
+  }
+  .pick-your-favorite .text-group .title {
+	margin-bottom: 40px;
+  }
+  .pick-your-favorite .text-group .description {
+	margin-bottom: 40px;
+  }
+  
+  
+  /* RESERVE STORE */
+  .reserve-store {
+	background-image: url("../images/reserve_store_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed; 
+	background-size: cover; 
+  }
+  .reserve-store .inner {
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .reserve-store .medal {
+	width: 334px;
+	height: 334px;
+	perspective: 600px;
+  }
+  .reserve-store .medal .front,
+  .reserve-store .medal .back {
+	width: 334px;
+	height: 334px;
+	position: absolute;
+	backface-visibility: hidden;
+	transition: 1s;
+  }
+  .reserve-store .medal .front {
+	transform: rotateY(0deg);
+  }
+  .reserve-store .medal:hover .front {
+	transform: rotateY(180deg);
+  }
+  .reserve-store .medal .back {
+	transform: rotateY(-180deg);
+  }
+  .reserve-store .medal:hover .back {
+	transform: rotateY(0deg);
+  }
+  .reserve-store .medal .back .btn {
+	position: absolute;
+	top: 240px;
+	left: 0;
+	right: 0;
+	margin: auto;
+  }
+  
