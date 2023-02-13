@@ -170,6 +170,9 @@
   .notice .promotion .swiper-slide a {
 	font-size: 16px;
   }
+  .notice .inner .swiper-slide a {
+	  font-size : 12px;
+  }
   .notice .promotion .swiper-slide-active {
 	opacity: 1;       /* 정가운데에 있는 슬라이드만 불투명하게 */
   }
@@ -344,11 +347,6 @@
   }
   .season-product .inner {
 	height: 400px;
-  }
-  .season-product .floating3 {
-	position: absolute;
-	top: -200px;
-	right: 0;
   }
   .season-product .text-group {
 	position: absolute;

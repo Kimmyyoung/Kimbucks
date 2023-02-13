@@ -42,3 +42,15 @@ new Swiper('.notice-line .swiper-container', {
   autoplay: {delay: 1000},  
 });
 
+
+//Scroll Magic 
+const spyElems = document.querySelectorAll('section.scroll-spy');
+spyElems.forEach((spyElems) => {
+  new ScrollMagic
+  .Scene({
+    triggerElement: spyElems,
+    triggerHook : .8
+  })
+  .setClassToggle(spyElems, 'show')
+  .addTo(new ScrollMagic.Controller());
+}) 
